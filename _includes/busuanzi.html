@@ -1,0 +1,23 @@
+
+<style>
+    .right-small {
+      float: right;
+      font-size: 0.8em;
+      /* 可选额外样式 */
+      color: #666;
+      margin-left: 10px;
+      margin-top: 15px;
+      position: relative;
+      z-index: 1;
+    }
+</style>
+<div class="busuanzi"></div>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script>
+  if (window.location.pathname === '/') {
+    pv_span = `<span class="right-small" id="busuanzi_container_site_pv"><span id="busuanzi_value_site_pv"></span> site views</span>`;
+  } else {
+    pv_span = `<span class="right-small" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span> page views</span>`;
+  }
+  document.querySelector('.busuanzi').insertAdjacentHTML('beforeend', pv_span);
+</script>

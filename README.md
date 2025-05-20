@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Jekyll Gitbook Theme
+title: Blog
 permalink: /
 ---
 
@@ -105,7 +105,7 @@ tracker:
 [Disqus](https://disqus.com/) comments can be enabled by adding the following configuration in `_config.yaml`:
 
 ```yaml
-disqushandler: "<YOUR DISQUS SHORTNAME>"
+disqushandler: "rand2333"
 ```
 
 ## Jekyll collections

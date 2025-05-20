@@ -2,19 +2,19 @@
 title:            Jekyll Gitbook
 longtitle:        Jekyll Gitbook
 author:           HE Tao
-email:            sighingnow@gmail.com
+email:            rand2333@gmail.com
 description: >
   Build Jekyll site with the GitBook style.
 
 version:          1.0
 gitbook_version:  3.2.3
 
-url:              'https://sighingnow.github.io'
-baseurl:          '/jekyll-gitbook'
+url:              'https://rand2333.github.io'
+baseurl:          ''
 rss:              RSS
 
 # bootstrap: use the remote theme for the site itself
-remote_theme: sighingnow/jekyll-gitbook
+# remote_theme: rand2333/jekyll-gitbook
 
 toc:
   enabled: true
@@ -44,7 +44,9 @@ markdown_ext:             markdown,mkdown,mkdn,mkd,md
 permalink:                /:categories/:year-:month-:day-:title:output_ext
 
 # Disqus comments
-# disqushandler:            sighingnow
+# disqushandler:            rand2333
+
+enable_giscus: true
 
 exclude:
   - _drafts
@@ -63,6 +65,14 @@ ordered_collections:
   - others
 
 page_width: 800px
+
+tracker:
+  google_analytics: "G-XPXGH0D0BX"
+
+readme_index:
+  enabled:          true
+  remove_originals: false
+  with_frontmatter: false
 
 destination:      ./_site
 incremental:      false

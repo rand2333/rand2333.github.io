@@ -19,13 +19,19 @@
                     {% endif %}
 
                     {{ content }}
+                    {%- include busuanzi.html -%}
+                    <br/><br/>
+                    {%- include clustrmaps.html -%}
 
                     {%- if jekyll.environment != 'dev' and site.disqushandler -%}
                         {%- include disqus.html -%}
                     {%- endif -%}
+                    {%- if site.enable_giscus -%}
+                        {%- include giscus.html -%}
+                    {%- endif -%}
+                    
                 </section>
             </div>
-
             {%- include search.html -%}
         </div>
     </div>

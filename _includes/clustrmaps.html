@@ -1,0 +1,21 @@
+
+<!-- <a href="https://clustrmaps.com/site/1c65q"  title="ClustrMaps"><img src="//www.clustrmaps.com/map_v2.png?d=zliOI1tuLZr2ymRcT0_-pv1uRCjn7g28YyqGdZI0SnU&cl=ffffff" /></a> -->
+<style>
+.mapstyle {
+  position: relative;
+  z-index: 2;
+  top: 100px;
+}
+</style>
+
+<div class="myclustermaps"></div>
+<script>
+  if (window.location.pathname === '/') {
+    const my_map = document.createElement('script');
+    my_map.src = '//clustrmaps.com/map_v2.js?d=zliOI1tuLZr2ymRcT0_-pv1uRCjn7g28YyqGdZI0SnU&cl=ffffff&w=a';
+    my_map.async = true;
+    my_map.id = "clustrmaps";
+    my_map.style = "mapstyle";
+    document.querySelector('.myclustermaps').appendChild(my_map);
+  }
+</script>
